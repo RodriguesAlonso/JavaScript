@@ -3,9 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>treinoJava</title>
+    <style>
+        body{
+            background-color: azure;
+            font: normal 20pt Arial;
+            color: blueviolet;
+        }
+    </style>
+    <title>treinoJavaScript</title>
 </head>
 <body>
+    <h1>Treinando JavaScript</h1>
+    <p>teste do <strong>paragrafo</strong></p>    
+    <p>teste segundo paragrafo</p>
+    <div id="msg">bloco div, click Aqui</div>
     
+    <script>
+        //var nome = window.prompt('qual seu nome')
+       // window.document.write(`<br><h2>Olá ${nome}</h2>`)               
+        
+        var p1 = window.document.getElementsByTagName('p')[0]        
+        window.document.write(`<br>copindo paragrafo 01 com html ${p1.innerHTML}`)
+        var p2 = window.document.getElementsByTagName('p')[1]        
+        p2.style.color = 'black'
+        window.document.write(`<br><br><div id="cor">copiando segundo paragrafo por dom: ${p2.innerText} </div>`)        
+        var d = window.document.getElementById('cor')
+        d.style.color = 'black'
+        window.document.write(d.innerHTML)
+        var selector = window.document.querySelector('p')
+        selector.style.backgroundColor = 'cyan'
+
+        
+        
+        
+        
+        
+    </script>
 </body>
 </html>
