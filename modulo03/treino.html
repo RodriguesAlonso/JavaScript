@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        input#verificar{
+            width: 60px;
+            margin-left: 10px;
+        }
+        input#vel1{
+            width: 40px;            
+        }
+    </style>
+    <title>Treinando</title>
+</head>
+<body>
+    <h1>Sistema de Multas do DETRAM</h1>
+    Velocidade do carro <input type="number" name="" id="vel1">km/h
+    <input type="button" value="Verificar" id="verificar" onclick="verificar()">
+    <div id="resultado"></div>
+    
+    <script>
+        function verificar(){
+            var velocidade = Number(vel1.value)
+            var verificar = window.document.querySelector('input#verificar')
+            var resultado = window.document.querySelector('div#resultado')
+            resultado.innerHTML = `<p>
+                Sua velocidade atual é de: <strong>${velocidade} km/h</strong> 
+            </p>`
+            if(velocidade >60 ){
+                resultado.innerHTML += ('<p>Seu carro foi <strong>multado</strong></p>')
+            }else{
+                resultado.innerHTML += ('<p>Seu carro não foi multado</p>')
+            }
+            resultado.innerHTML += ('Sempre use cinto de segurança')
+        }
+    </script>
+</body>
+</html>
