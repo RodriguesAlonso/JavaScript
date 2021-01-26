@@ -12,10 +12,30 @@
 </head>
 <body>
     <h1>Sistema de multa</h1>
-    Velocidade do carro <input type="text" id="txt1"> km/h <input type="button" value="Verificar">    
-    <div id="res"></div>
-    <script src="ex008.js"></script>
-    <noscript>You need JavaScript</noscript>
+    Velocidade do carro: <input type="number" name="txt1" id="txt1"> km/h 
+    <input type="button" value="Verificar" id="ver" onclick="calcular()">    
+    <div id="res">testo</div>
     
+    <script>
+        function calcular(){
+            var ver = window.document.querySelector('input#ver')
+            var res = window.document.querySelector('div#res')
+            var vel = Number(txt1.value)
+            if(vel > 60){
+                res.innerHTML = (`<p>
+                	A velocidade de <strong>${vel}km/h</strong> é maior do que a permitida, então seu carro foi multado
+                </p>`)
+            }else{
+                res.innerHTML = (`<p>
+                    Com a velocidade de <strong>${vel}Km/h</strong> seu carro não foi multado
+                </p>`)
+                res.innerHTML += ('<p> dirija sempres com o cinto de segurança </p>')
+            }
+
+            //res.innerHTML = vel
+        }
+        
+
+    </script>
 </body>
 </html>
