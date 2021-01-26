@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        input#idade{
+            width: 40px;
+        }
+    </style>
+    <title>treino02</title>
+</head>
+<body>
+    <h1>Critério para votação</h1>
+    Sua idade: <input type="number" id="idade">
+    <input type="button" value="Verificar" onclick="verificar()">
+    <div id="resultado"></div>
+
+    <script>
+        
+        function verificar(){            
+            var age = Number(idade.value)            
+            var res = window.document.querySelector('div#resultado')        
+            if (age < 16){
+                res.innerHTML = `Para idade de ${age} anos não vota`
+            }
+            else if ( age >= 16 && age < 18){
+                res.innerHTML = `Para idade de ${age} anos voto opitativo`
+            }
+            else if (age>=18 && age<65){
+                res.innerHTML = `Para idadae de ${age} anos é obrigatório`
+                }
+            else{
+                res.innerHTML = `Para idade de ${age} anos voto opitativo`
+            }
+            
+                
+        }
+
+    </script>
+
+    
+    
+</body>
+</html>
