@@ -1,24 +1,30 @@
 body{
     background-color: rgba(195, 236, 148, 0.404);    
 }
-section{
-    text-align: center;    
-}
-div#form{
+header{
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.219);       
     text-align: center;
+    color: white;  
+    background-color: aquamarine;
+    border-radius: 50px;
+    color:rgba(34, 34, 34, 0.75);
+    width: 300px;
+    margin: auto;
+}
+
+section{
+    color:rgba(34, 34, 34, 0.75);    
     border-radius: 50px;
     background-color: aquamarine;
     border-radius: 50px;
     width: 300px;
-    padding: 15px;              
+    padding: 15px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.219);
+    margin: auto;              
 }
-input{
-    width: 50px;
-}
-input#verificar{
-    width: 60px;
-}
+
 footer{
+    text-align: center;
     font-weight: lighter;
     font-size: smaller;
     font-style: italic;

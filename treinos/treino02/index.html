@@ -8,22 +8,36 @@
 </head>
 <body>
     <header>
-        <h1>identificador</h1>
+        <h1>Verificador de Idade</h1>        
     </header>
-    <section>
-        <div id="form">
-            Ano de nascimento: 
-            <input type="number" id="ano">
-            <input type="button" value="Verificar
-            " onclick="verificar()" id="verificar">
-            <p>Preencha  os dados acima</p>
-        </div>
-        <div>
 
+    <section>
+        <div >
+            <p>
+                Ano de nascimento: 
+                <input type="number" id="ano" min="0" max="2021">           
+            </p>            
+            <p>
+                Sexo: 
+                <input type="radio" name="sexo" id="masculino" checked>
+                <label for="chek">Masculino</label>
+                <input type="radio" name="sexo" id="feminino">
+                <label for="feminino">feminino</label>
+            </p>
+            <p>
+                <input type="button" value="Verificar
+                " onclick="verificar()" id="verificar">
+            </p>
+        </div>
+        <div id="res">            
+            Preencha  os dados acima
+            
         </div>
     </section>
     <footer id="roda">
-        Treino Js
+        <p>
+            Treino Js
+        </p>
     </footer>
     <script src="script.js"></script>
 </body>
