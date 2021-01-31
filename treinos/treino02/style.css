@@ -1,11 +1,11 @@
 body{
-    background-color: rgba(195, 236, 148, 0.404);
-    text-align: center;
+    background-color: rgba(195, 236, 148, 0.404);    
 }
 section{
-    text-align: center;
+    text-align: center;    
 }
 div#form{
+    text-align: center;
     border-radius: 50px;
     background-color: aquamarine;
     border-radius: 50px;
