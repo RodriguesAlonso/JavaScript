@@ -15,14 +15,21 @@
     <section>
         <div>
             <p>
-                Ano de nascimento <input type="number" id="ano">
+                Ano de nascimento <input type="number" id="txtano" min="0" max="2021">
             </p>
-            <p>Sexo <input type="checkbox" name="" id="masculino">Masculino<input type="checkbox" name="" id="feminino">Feminino</p>
-            <input type="button" value="Verificar" id="ver">
-            <p>Preecha os dados acima para verificar o resultado</p>
+            <p>Sexo: <input type="radio" name="radsex" id="mas" checked>
+            <label for="mas">Maculino</label>
+            <input type="radio" id="fem" name="radsex">
+            <label for="fem">Feminino</label>
+            </p>
+            <p>
+                <input type="button" value="Verificar" onclick="verificar()">
+            </p>
 
         </div>
-        <div>
+        <div id="res">
+            Preencha os dados acima para ver o resultado
+            <img src="#" alt="" id="imagem">
 
         </div>
     </section>
