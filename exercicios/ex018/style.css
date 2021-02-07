@@ -1,0 +1,53 @@
+body{
+    font: normal 15px Arial;
+    background-color: rgba(109, 17, 196, 0.63);
+}
+header{
+    color: aliceblue;
+    margin: auto;
+    text-align: center;
+    background-color: rgb(240, 145, 28);
+    border-radius: 15px;
+    width: 400px;
+    
+}
+section{
+    background-color: rgb(240, 145, 28);
+    width: 200px;
+    text-align: center;
+    margin: auto;
+    padding: 10px;
+    border-radius: 15px;    
+}
+select.seletor{        
+    font-size: 12px;
+    background-color: antiquewhite;
+    width: 160px;
+    height: 120px;
+    padding: 5px;
+    margin: auto;
+    border-radius: 10px;
+    
+}
+input#end{    
+    margin-bottom: 5px;
+    padding: 3px;
+}
+div#res{
+    font-size: 12px;
+    margin: auto;
+    background-color: antiquewhite;
+    border-radius: 15px;
+    width: 160px;
+    text-align: justify;
+    padding: 2px 2px 3px 10px;
+    
+
+}
+footer{
+    margin-top: 10px;
+    color: antiquewhite;
+    text-align: center;
+    font-size: 10px;
+    font-style: italic;
+}
